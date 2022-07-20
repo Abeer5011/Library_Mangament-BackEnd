@@ -17,7 +17,7 @@ public class Author {
     private String name;
 
 
-//    @JsonIgnore //عشان مايصير لووب في جيسون
+
     @OneToMany( cascade = CascadeType.ALL)
     private Set<Book> books;
 
